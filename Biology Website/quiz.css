@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#top{
+    scroll-behavior: smooth;
+}
+
+.hero-section{
+    height: 100vh;
+}
+
+.nav-menu{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.nav-menu a, h1 {
+    text-decoration: none;
+    font-family: inherit;
+    color: black;
+}
+
+.nav-menu .right{
+    display: flex;
+    align-items: center;
+}
+
+.right a{
+    margin-left: 3rem;
+    font-size: 14px;
+}
+.right .nav-quiz{
+    padding: .5rem 2rem;
+    border-radius: 4px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s;
+    outline: none;
+    background: none;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.nav-quiz::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 200px;
+    width: 160px;
+    border-radius: 50%;
+    top: 100%;
+    left: -30px;
+    transition: .5s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.nav-quiz:hover{
+    color: rgb(255, 255, 255);
+}
+
+.nav-quiz:hover::before{
+    top: -50px;
+}
+
+.nav-quiz{
+    color: rgb(51, 51, 51);
+    border: 2px solid rgb(51, 51, 51);
+}
+
+.nav-quiz::before{
+    background: rgb(51, 51, 51);
+}
+
+.title-quiz{
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+
+.quizSection{
+    padding-bottom: 1rem;
+    margin-top: -34rem;
+    margin-left: 310px;
+}
+  
+.quizContainer{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px 20px 20px 20px;
+    margin-top: 30px;
+    width: 700px;
+}
+
+.quizContainer p{
+    font-weight: bold;
+}
+
+.nav-submit{
+    all: none;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    background-color: rgb(36, 161, 36);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 310px;
+    transition: .3s;
+}
+
+.nav-submit:hover{
+    background-color: rgb(41, 177, 41);
+}
+
+.score{
+    margin-left: 305px;
+}
+
